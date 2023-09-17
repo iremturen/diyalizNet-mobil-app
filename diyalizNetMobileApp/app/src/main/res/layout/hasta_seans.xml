@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@drawable/pic2"
+    >
+
+    <TextView
+        android:layout_width="167dp"
+        android:layout_height="wrap_content"
+        android:text="Seans Kayıt"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="25dp"></TextView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="419dp"
+        android:layout_height="356dp"
+        android:layout_marginTop="150dp"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40dp">
+
+
+                <TextView
+                    android:id="@+id/txtDeneme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Ad: "
+                    android:textColor="#869bb7"
+                    android:textSize="20sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/txtAdSeansKayit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textColor="#718291"
+                    android:textSize="20sp"></TextView>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Soyad: "
+                    android:textSize="20sp"
+                    android:textColor="#869bb7"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/txtSoyadSeansKayit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/toolbar"
+                    android:textSize="20sp"></TextView>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginBottom="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Tc No: "
+                    android:textSize="20sp"
+                    android:textColor="#869bb7"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/txtTcSeansKayit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/toolbar"
+                    android:textSize="20sp"></TextView>
+            </TableRow>
+
+        </TableLayout>
+
+
+        <TextView
+            android:id="@+id/txtIdSeansKayit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="id"
+            android:textSize="30sp"
+            android:visibility="invisible"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></TextView>
+
+
+        <LinearLayout
+            android:layout_width="335dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="-30dp"
+            android:layout_marginLeft="-2dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editStarih"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/edittext_customize2"
+                android:gravity="center"
+                android:hint="Tarihini Giriniz"
+                android:inputType="date"
+                android:textSize="20sp"></EditText>
+
+            <EditText
+                android:id="@+id/editSsaat"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/edittext_customize2"
+                android:gravity="center"
+                android:hint="Saatini Giriniz"
+                android:inputType="time"
+                android:textSize="20sp"></EditText>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnKayit"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="-5dp"
+            android:background="#869bb7"
+            android:onClick="seansKayit"
+            android:text="Seans Oluştur"></Button>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+

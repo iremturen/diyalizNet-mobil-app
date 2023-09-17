@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/pic2"
+    >
+
+
+    <TextView
+        android:layout_width="194dp"
+        android:layout_height="40dp"
+        android:text="Hasta Kayıt"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.129"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.046">
+
+    </TextView>
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.58">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-40dp"
+            android:orientation="vertical"
+            android:padding="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hasta Ad :"
+                android:textColor="#718291"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- EditText 1 -->
+            <EditText
+                android:id="@+id/editAd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext_customize"
+                android:gravity="center"
+                android:hint="Hasta Adı"
+                android:inputType="text"
+
+                />
+
+            <!-- TextView 2 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hasta Soyad :"
+                android:textColor="#718291"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- EditText 2 -->
+            <EditText
+                android:id="@+id/editSoyad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext_customize"
+                android:gravity="center"
+                android:hint="Hasta Soyadı"
+                android:inputType="text"
+
+                />
+
+            <!-- TextView 3 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hasta Tc :"
+                android:textColor="#718291"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- EditText 3 -->
+            <EditText
+                android:id="@+id/editTc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext_customize"
+                android:gravity="center"
+                android:hint="Hasta Tc"
+                android:inputType="number"
+                android:maxLength="11"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Doğum Tarihi :"
+                android:textColor="#718291"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- EditText 2 -->
+            <EditText
+                android:id="@+id/editDogumTarih"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/edittext_customize"
+                android:gravity="center"
+                android:hint="Doğum Tarihi"
+                android:inputType="number"
+
+                />
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+
+                <TableRow
+                    android:layout_width="345dp"
+                    android:layout_height="wrap_content"
+
+                    >
+
+
+                    <Button
+                        android:id="@+id/btnKayitHasta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="59dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="22dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/btnkaydetcustomize"
+                        android:onClick="hastaKayit"
+                        android:text="Hasta Oluştur"
+                        android:textColor="@color/white"
+
+
+                        ></Button>
+
+                    <ImageView
+                        android:id="@+id/imgHastaList"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="7dp"
+                        android:onClick="listeYonlendir"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/list2" />
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

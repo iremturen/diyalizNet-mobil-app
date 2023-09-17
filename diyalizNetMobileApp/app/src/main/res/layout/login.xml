@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="390dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="-20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.58">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="27dp"
+            android:src="@drawable/tc"></ImageView>
+
+        <EditText
+            android:id="@+id/editTextTextTc"
+            android:layout_width="283dp"
+            android:layout_height="49dp"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/edittext_customize3"
+            android:ems="10"
+            android:maxLength="11"
+            android:textSize="17dp"
+            android:hint="T.C. kimlik numaranızı giriniz"
+            android:paddingLeft="24dp"
+            android:textColorHint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.601"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.696"></EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="390dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.551">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="29dp"
+            android:src="@drawable/login1"></ImageView>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="312dp"
+            android:layout_height="match_parent"
+            app:passwordToggleEnabled="true"
+            android:textColorHint="@color/white">
+
+            <EditText
+                android:id="@+id/editTextTextPassword"
+                android:layout_width="283dp"
+                android:layout_height="49dp"
+                android:layout_marginLeft="4dp"
+                android:background="@drawable/edittext_customize3"
+                android:ems="10"
+                android:hint="Şifre giriniz"
+                android:inputType="textPassword"
+                android:paddingLeft="24dp"
+                android:textColorHint="@color/white"
+                android:textSize="17dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.601"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.696"></EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="348dp"
+        android:layout_height="54dp"
+        android:background="@drawable/edittext_customize4"
+        android:text="Giriş"
+        android:textColor="@color/main"
+        android:textSize="15dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.831" />
+
+    <Button
+        android:id="@+id/signUp_yon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hesabınız yok mu? Kayıt olun."
+        android:textSize="15dp"
+        android:textAllCaps="false"
+        android:background="@drawable/login_reg"
+        android:enabled="true"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLogin"
+        app:layout_constraintVertical_bias="0.168" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

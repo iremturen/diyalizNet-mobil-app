@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pic2"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="215dp"
+        android:layout_height="42dp"
+        android:text="Malzeme Kayıt"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.132"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.043" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="385dp"
+        android:layout_height="539dp"
+        android:layout_marginTop="90dp"
+        android:orientation="vertical"
+        android:padding="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Malzeme Adı:"
+            android:textColor="#869bb7"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editMalzemeAdi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittext_customize2"
+            android:gravity="center"
+            android:hint="Malzeme Adı"
+            android:inputType="text" />
+
+        <!-- Malzeme Açıklama -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Açıklama:"
+            android:textColor="#869bb7"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editMalzemeAciklama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittext_customize2"
+            android:gravity="center"
+            android:hint="Açıklama"
+            android:inputType="text" />
+
+        <!-- Malzeme Miktarı -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Miktar:"
+            android:textColor="#869bb7"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editMalzemeMiktari"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittext_customize2"
+            android:gravity="center"
+            android:hint="Miktar"
+            android:inputType="number" />
+
+        <!-- Malzeme Türü -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Malzeme Türü:"
+            android:textColor="#869bb7"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinnerMalzemeTuru"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/edittext_customize2" />
+
+
+        <TableLayout
+            android:layout_width="301dp"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="320dp"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btnKayitMalzeme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="49dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="50dp"
+                    android:background="@drawable/btnkaydetcustomize"
+                    android:onClick="malzemeKayit"
+                    android:text="Malzeme Ekle"
+                    android:textColor="@color/white" />
+
+            </TableRow>
+        </TableLayout>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

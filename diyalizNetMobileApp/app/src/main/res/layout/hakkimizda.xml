@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="40dp"
+    android:background="@drawable/pic">
+
+    <TextView
+        android:layout_width="344dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="30dp"
+        android:text="Hakkımızda"
+        android:textColor="@null"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.186"></TextView>
+
+    <LinearLayout
+        android:layout_width="390dp"
+        android:layout_height="149dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.963">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/tik"></ImageView>
+
+        <TextView
+            android:layout_width="245dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="Bakanlık Uygulamaları"
+            android:textColor="@color/main"
+            android:textSize="18dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:layout_width="308dp"
+            android:layout_height="105dp"
+            android:layout_marginLeft="-257dp"
+            android:layout_marginTop="30dp"
+            android:text="  DiyalizNet, geniş kullanıcı kitlesiyle kendini kanıtlamış, Türkiye’nin hemen hemen tüm şehirlerinde diyaliz merkezleri tarafından kullanılan bir klinik bilgi sistemidir. SGK Medula faturalandırma işlemlerinin yanı sıra hasta tıbbi süreç takibi, CRM gibi modülleride içermektedir. Diyaliznet, güvenli mimari ve kodlama teknikleri ile yazılmış ve herhangi bir yatırım gerektirmeyen bir klinik bilgi sistemidir. Sistem, Medula, USS ve Sağlık NET(E-Nabız) USVS (Ulusal Sağlık Veri Sistemi) uygulamalarını da içermektedir."
+            android:textColor="#505051"
+            android:textSize="10dp"></TextView>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="260dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.026"></ImageView>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="367dp"
+        android:layout_height="118dp"
+        android:text="   Firmamız 2007 senesinden beri sağlık bilgi sistemleri için bilişim teknolojileri sektöründe uygulamalar geliştirmektedir.Diyaliz merkezlerine özel Diyaliznet Klinik Bilgi Sistemi diyaliz programı ve USS /E-nabız istatistik yazılımlarını geliştirmiş ve bu hizmetlerini devam ettirmektedir."
+        android:textColor="@color/main"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.636"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.341" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="397dp"
+        android:layout_height="134dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.602">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/tik"></ImageView>
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:text="Güvenlik"
+            android:textColor="@color/main"
+            android:textSize="18dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:layout_width="312dp"
+            android:layout_height="82dp"
+            android:layout_marginLeft="-150dp"
+            android:layout_marginTop="30dp"
+            android:text="  Güvenli mimari ve kodlama teknikleri ile yazılmış olan yazılımlarımız internet teknolojisinin dayanılmaz gücü ile kurulum ve donanım maliyetleri gerektirmeyen ve çok kullanıcılı sistemlerdir. Hızla gelişen bilgi ve iletişim teknolojilerine ayak uydurarak, müşteri memnuniyeti odaklı hizmet anlayışı ile proaktif, kullanıcı dostu, akıllı ama aynı zamanda ekonomik çözümleri müşterilerimize sunmaktır."
+            android:textColor="#505051"
+            android:textSize="10dp"></TextView>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

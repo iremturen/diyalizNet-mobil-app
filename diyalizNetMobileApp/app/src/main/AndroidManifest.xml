@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:targetApi="31">
+        <activity
+            android:name=".Activity.Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".Activity.hastaKayit"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Activity.listeArayuz"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Activity.homeActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Activity.seansKayit"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Activity.seansListe"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Activity.SeansMalzemeDetay"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Activity.malzemeCheckbox"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Activity.MalzemeDeneme"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Activity.MalzemeKayit"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Activity.Ayarlar"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Activity.Iletisim"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Activity.Sertifika"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Activity.Hakkimizda"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Activity.Bilgilerim"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".Activity.Registration"
+            android:screenOrientation="portrait"></activity>
+
+
+    </application>
+
+</manifest>

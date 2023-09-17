@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login">
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="399dp"
+        android:layout_height="241dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.614">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="390dp"
+            android:layout_height="49dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.238"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.58">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="42dp"
+                android:layout_marginLeft="27dp"
+                android:src="@drawable/name"></ImageView>
+
+            <EditText
+                android:id="@+id/editTextIsım"
+                android:layout_width="140dp"
+                android:layout_height="49dp"
+                android:layout_marginLeft="4dp"
+                android:background="@drawable/edittext_customize3"
+                android:ems="10"
+                android:hint="Adı"
+                android:paddingLeft="15dp"
+                android:textColorHint="@color/white"
+                android:textSize="17dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.601"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.696"></EditText>
+
+            <EditText
+                android:id="@+id/editTextSoyisim"
+                android:layout_width="140dp"
+                android:layout_height="49dp"
+                android:layout_marginLeft="4dp"
+                android:background="@drawable/edittext_customize3"
+                android:ems="10"
+                android:hint="Soyadı"
+                android:paddingLeft="15dp"
+                android:textColorHint="@color/white"
+                android:textSize="17dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.601"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.696"></EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="390dp"
+            android:layout_height="49dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.238"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.58">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="42dp"
+                android:layout_marginLeft="27dp"
+                android:src="@drawable/tc"></ImageView>
+
+            <EditText
+                android:id="@+id/editTCNO"
+                android:layout_width="284dp"
+                android:layout_height="49dp"
+                android:layout_marginLeft="4dp"
+                android:background="@drawable/edittext_customize3"
+                android:ems="10"
+                android:hint="T.C. kimlik numaranızı giriniz"
+                android:maxLength="11"
+                android:paddingLeft="24dp"
+                android:textColorHint="@color/white"
+                android:textSize="17dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.601"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.696"></EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="390dp"
+            android:layout_height="69dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.238"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.551">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="29dp"
+                android:src="@drawable/login1"></ImageView>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="312dp"
+                android:layout_height="match_parent"
+                android:textColorHint="@color/white"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/editTextPassword"
+                    android:layout_width="284dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="4dp"
+                    android:background="@drawable/edittext_customize3"
+                    android:ems="10"
+                    android:hint="Şifre giriniz"
+                    android:inputType="textPassword"
+                    android:paddingLeft="24dp"
+                    android:textColorHint="@color/white"
+                    android:textSize="17dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.601"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.696"></EditText>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="390dp"
+            android:layout_height="69dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.238"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.551">
+
+            <ImageView
+                android:layout_width="44dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="29dp"
+                android:layout_marginTop="7dp"
+                android:src="@drawable/confirm"></ImageView>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="312dp"
+                android:layout_height="match_parent"
+                android:textColorHint="@color/white"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/editTextRePassword"
+                    android:layout_width="284dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="4dp"
+                    android:background="@drawable/edittext_customize3"
+                    android:ems="10"
+                    android:hint="Şifreyi doğrulayın"
+                    android:inputType="textPassword"
+                    android:paddingLeft="24dp"
+                    android:textColorHint="@color/white"
+                    android:textSize="17dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.601"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.696"></EditText>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnUserKayit"
+        android:layout_width="348dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/edittext_customize4"
+        android:text="Kayıt"
+        android:textColor="@color/main"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.888" />
+
+    <Button
+        android:id="@+id/login_yon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zaten bir hesabınız var mı? Giriş yapın."
+        android:textColor="@color/white"
+        android:background="@drawable/login_reg"
+        android:textSize="15dp"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnUserKayit"
+        app:layout_constraintVertical_bias="0.181" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
